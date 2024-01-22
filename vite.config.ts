@@ -6,7 +6,7 @@ export default ({ mode }: { mode: string }) => {
 
   return defineConfig({
     // To access env vars here use process.env.VITE_API_KEY
-
+    base: "/feedback-log/",
     define: {
       "process.env.VITE_API_KEY": JSON.stringify(process.env.VITE_API_KEY),
     },
